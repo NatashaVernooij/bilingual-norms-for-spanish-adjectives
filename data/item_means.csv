@@ -1,0 +1,89 @@
+Adjective,Position,Word_order,Type_of_Adj,Item_mean,Item_SD,N
+acrílica,Pre-nominal,AdjN,post-nominal,3.736842105,1.855367823,76
+acrílica,Post-nominal,NAdj,post-nominal,5.605263158,1.55162467,76
+alemán,Pre-nominal,AdjN,post-nominal,3.947368421,2.012761562,76
+alemán,Post-nominal,NAdj,post-nominal,5.710526316,1.558028809,76
+algún,Pre-nominal,AdjN,pre-nominal,5.473684211,1.645479365,38
+alguno,Post-nominal,NAdj,pre-nominal,4.631578947,2.113725682,38
+alto,Pre-nominal,AdjN,change,4.289473684,2.134265147,152
+alto,Post-nominal,NAdj,change,4.973684211,1.999824554,152
+amarillo,Pre-nominal,AdjN,no change,3.736842105,2.238293396,76
+amarillo,Post-nominal,NAdj,no change,5.837837838,1.518652793,76
+aquel,Pre-nominal,AdjN,pre-nominal,5.842105263,1.607729866,38
+aquel,Post-nominal,NAdj,pre-nominal,4.210526316,2.097060042,38
+argentino,Pre-nominal,AdjN,post-nominal,2.684210526,1.416279617,38
+argentino,Post-nominal,NAdj,post-nominal,5.555555556,1.756407504,38
+azul,Pre-nominal,AdjN,no change,3.605263158,1.980164799,76
+azul,Post-nominal,NAdj,no change,5.631578947,1.34407715,76
+bastante,Pre-nominal,AdjN,pre-nominal,6,1.333333333,38
+bastante,Post-nominal,NAdj,pre-nominal,3.263157895,2.050531239,38
+belga,Pre-nominal,AdjN,post-nominal,2.789473684,1.315672509,38
+belga,Post-nominal,NAdj,post-nominal,4.421052632,1.980902978,38
+blanco,Pre-nominal,AdjN,no change,3.631578947,1.978547824,76
+blanco,Post-nominal,NAdj,no change,6.184210526,1.332651556,76
+brasileño,Pre-nominal,AdjN,post-nominal,5.105263158,1.728671193,38
+brasileño,Post-nominal,NAdj,post-nominal,6.210526316,1.08417646,38
+chileno,Pre-nominal,AdjN,post-nominal,4.315789474,2.161600014,38
+chileno,Post-nominal,NAdj,post-nominal,5.578947368,1.67715995,38
+cinco,Pre-nominal,AdjN,pre-nominal,6.052631579,1.268143184,38
+cinco,Post-nominal,NAdj,pre-nominal,2.315789474,1.454977342,38
+cuatro,Pre-nominal,AdjN,pre-nominal,5.631578947,1.73879033,38
+cuatro,Post-nominal,NAdj,pre-nominal,2.315789474,1.945154423,38
+cubano,Pre-nominal,AdjN,post-nominal,2.736842105,1.694504361,38
+cubano,Post-nominal,NAdj,post-nominal,5.777777778,1.395604678,38
+doce,Pre-nominal,AdjN,pre-nominal,5.578947368,1.216360211,38
+doce,Post-nominal,NAdj,pre-nominal,2.315789474,1.492672159,38
+dos,Pre-nominal,AdjN,pre-nominal,6.263157895,0.933458638,38
+dos,Post-nominal,NAdj,pre-nominal,2.473684211,1.775400457,38
+elástico,Pre-nominal,AdjN,post-nominal,4.210526316,2.002132576,76
+elástico,Post-nominal,NAdj,post-nominal,5.5,1.656273903,76
+eléctrico,Pre-nominal,AdjN,post-nominal,3.921052632,1.879930691,76
+eléctrico,Post-nominal,NAdj,post-nominal,6.210526316,1.069425073,76
+ese,Pre-nominal,AdjN,pre-nominal,4.783783784,2.015704111,76
+ese,Post-nominal,NAdj,pre-nominal,2.552631579,1.735127823,76
+estadounidense,Pre-nominal,AdjN,post-nominal,3.131578947,1.742490492,76
+estadounidense,Post-nominal,NAdj,post-nominal,5.578947368,1.481992431,76
+este,Pre-nominal,AdjN,pre-nominal,5.973684211,1.550707635,76
+este,Post-nominal,NAdj,pre-nominal,2.657894737,1.774843972,76
+gris,Pre-nominal,AdjN,no change,3.263157895,1.781044494,76
+gris,Post-nominal,NAdj,no change,5.184210526,1.753070868,76
+holandés,Pre-nominal,AdjN,post-nominal,3.972972973,1.950590886,76
+holandés,Post-nominal,NAdj,post-nominal,5.72972973,1.643989873,76
+marrón,Pre-nominal,AdjN,no change,3.868421053,1.905483589,76
+marrón,Post-nominal,NAdj,no change,5.447368421,1.884465204,76
+menos,Pre-nominal,AdjN,pre-nominal,5.105263158,1.940639552,38
+menos,Post-nominal,NAdj,pre-nominal,3.578947368,1.894899278,38
+mismo,Pre-nominal,AdjN,change,4.72,1.797595992,152
+mismo,Post-nominal,NAdj,change,3.513157895,2.068773685,152
+morado,Pre-nominal,AdjN,no change,3.789473684,2.028951197,76
+morado,Post-nominal,NAdj,no change,5.842105263,1.385763831,76
+muchos,Pre-nominal,AdjN,pre-nominal,6.368421053,1.116070802,38
+muchos,Post-nominal,NAdj,pre-nominal,2.473684211,1.775400457,38
+negro,Pre-nominal,AdjN,no change,3.868421053,1.905483589,76
+negro,Post-nominal,NAdj,no change,5.783783784,1.68547941,76
+pobre,Pre-nominal,AdjN,change,4.763157895,2.02562531,152
+pobre,Post-nominal,NAdj,change,4.065789474,2.054818898,152
+poco,Pre-nominal,AdjN,pre-nominal,6.315789474,1.056862841,38
+poco,Post-nominal,NAdj,pre-nominal,4.526315789,2.03765718,38
+rojo,Pre-nominal,AdjN,no change,3.894736842,2.050569778,76
+rojo,Post-nominal,NAdj,no change,6.315789474,0.989273912,76
+rubio,Pre-nominal,AdjN,no change,3.473684211,1.899314842,76
+rubio,Post-nominal,NAdj,no change,5.947368421,1.334518203,76
+seis,Pre-nominal,AdjN,pre-nominal,6.578947368,0.901590537,38
+seis,Post-nominal,NAdj,pre-nominal,2.210526316,1.750522061,38
+solo,Pre-nominal,AdjN,change,4.855263158,1.881162388,152
+solo,Post-nominal,NAdj,change,3.881578947,1.959367961,152
+sueco,Pre-nominal,AdjN,post-nominal,4.631578947,1.460993814,38
+sueco,Post-nominal,NAdj,post-nominal,5.157894737,1.675415633,38
+tres,Pre-nominal,AdjN,pre-nominal,6.105263158,0.994134847,38
+tres,Post-nominal,NAdj,pre-nominal,2.315789474,1.634782744,38
+turca,Pre-nominal,AdjN,post-nominal,4.368421053,2.113725682,38
+turca,Post-nominal,NAdj,post-nominal,5.947368421,1.393384537,38
+unos,Pre-nominal,AdjN,pre-nominal,6.342105263,1.121685888,76
+unos,Post-nominal,NAdj,pre-nominal,2.815789474,1.970803968,76
+veinte,Pre-nominal,AdjN,pre-nominal,6.684210526,0.820069887,38
+veinte,Post-nominal,NAdj,pre-nominal,2.842105263,1.92247404,38
+verde,Pre-nominal,AdjN,no change,3.842105263,1.896316711,76
+verde,Post-nominal,NAdj,no change,5.921052632,1.32301006,76
+viejo,Pre-nominal,AdjN,change,4.671052632,2.093724961,152
+viejo,Post-nominal,NAdj,change,4.933333333,1.961338025,152
