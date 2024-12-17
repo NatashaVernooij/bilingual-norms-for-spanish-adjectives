@@ -1,0 +1,106 @@
+---
+title: "Adj Norming Analysis"
+author: "Natasha Vernooij"
+date: "2/5/2022"
+---
+
+```{r}
+Adjective_Norming_Data <- read.csv("/desktop/Adj Norming Data.csv")
+View(Adjective_Norming_Data)          
+```
+```{r}
+Adjective_Norming_Data$Subj_num <-factor(Adjective_Norming_Data$Subj_num)
+Adjective_Norming_Data$Stimulus_list <-factor(Adjective_Norming_Data$Stimulus_list)
+Adjective_Norming_Data$Span_acq_age <- as.numeric(Adjective_Norming_Data$Span_acq_age)
+Adjective_Norming_Data$Eng_acq_age <- as.numeric(Adjective_Norming_Data$Eng_acq_age)
+Adjective_Norming_Data$Percent_convo_w_bilinguals <- as.numeric(Adjective_Norming_Data$Percent_convo_w_bilinguals)
+Adjective_Norming_Data$perc_time_EP <- as.numeric(Adjective_Norming_Data$perc_time_EP)
+Adjective_Norming_Data$Age <- as.numeric(Adjective_Norming_Data$Age)
+```
+##Graphing
+#Create the Subject means by the conditions (word order by type of adjective):
+```{r}
+library(dplyr)
+subjmeans <-Adjective_Norming_Data %>%
+  group_by(Subj_num, Word_order, Type_of_Adj) %>%
+  dplyr::summarize(Mean = mean(Rating, na.rm=TRUE)) %>%
+  ungroup()
+```
+
+```{r}
+#optional: save subject means in .csv file
+#write.csv(subjmeans,"/desktop/Subject Means.csv")
+```
+
+#Graph
+#graph the subject means- error bars are standard error
+```{r}
+library(ggplot2)
+Adj_Norming_graph <- ggplot(subjmeans, aes(Word_order, Mean, col=Type_of_Adj))+
+  scale_y_continuous(limit= c(1,7), expand = c(0,0)) + scale_x_discrete(expand = c(.25,0)) +
+  stat_summary(fun.data="mean_se", position=position_dodge(width=.15), size= 1) +
+  stat_summary(aes(group=Type_of_Adj),fun.data="mean_se", geom="line", size= 1,
+  position=position_dodge(width=.15))+
+  labs(col="Adjective Type", y= "Mean Rating", x= "Word Order") +
+  theme_bw() + 
+  theme(text = element_text(size = 20)) 
+Adj_Norming_graph
+```
+
+##T-tests
+Test the differences between the word order for each adjective type: 
+Change: adjectives that change position and change meaning depending on their location:
+There is a significant difference between the positions, where bilinguals prefer these adjectives in the pre-nominal position, t(37)=3.14, p<.01. Mean difference= 0.39.
+```{r}
+t.test(Mean ~ Word_order, data=subjmeans[subjmeans$Type_of_Adj %in% c('change'),], paired=T)
+```
+No change: adjectives that are predominantly post-nominal and don't change meaning:
+There is a significant difference between the positions, where bilinguals prefer these adjectives in the post-nominal position, t(37)=-7.13, p<.001. Mean difference= -2.11.
+```{r}
+t.test(Mean ~ Word_order, data=subjmeans[subjmeans$Type_of_Adj %in% c('no change'),], paired=T)
+```
+
+Post-nominal: adjectives that are mandatorily post-nominal:
+There is a significant difference between the positions, where bilinguals prefer these adjectives in the post-nominal position, t(37)=-7.14, p<.001. Mean difference= -1.86.
+```{r}
+t.test(Mean ~ Word_order, data=subjmeans[subjmeans$Type_of_Adj %in% c('post-nominal'),], paired=T)
+```
+
+Pre-nominal: adjectives (quantifiers) that are mandatorily pre-nominal:
+There is a significant difference between the positions, where bilinguals prefer these adjectives in the pre-nominal position, t(37)=11.81, p<.001. Mean difference= 2.99.
+```{r}
+t.test(Mean ~ Word_order, data=subjmeans[subjmeans$Type_of_Adj %in% c('pre-nominal'),], paired=T)
+```
+
+##Descriptive Stats
+```{r}
+summary(Adjective_Norming_Data)
+```
+n= 38; 2 did not finish whole survey
+Age: 18-48, mean= 21
+Gender: m=8 f=26, nb=1 prefer not to answer=1 (from Google Sheet, can get this by summarizing by Subj_num and Gender)
+LexTALE Eng: range= 52.24-96.22, mean= 78.87
+LexTALE Esp: range= 43.74-95.08, mean= 66.33
+% El Paso: range= 40-100, mean = 95.67
+% talk with El Paso: range= 31-100, mean=88.64
+Hispanic (Latinx?): y=33, n=3 (from Google Sheet, can get this by summarizing by Subj_num and Latinx)
+
+##Item Means and SD
+#calculate mean and sd for each appearance of an adjective in each position, include the type_of_adj column
+```{r}
+#na.rm=TRUE removes NA data points before calculating mean and sd
+item_means <-Adjective_Norming_Data %>%
+  group_by(item_adj, Word_order, Type_of_Adj) %>%
+  summarize(item_mean = mean(Rating, na.rm=TRUE), item_SD=sd(Rating, na.rm=TRUE)) %>%
+  ungroup()
+View(item_means)
+#calculate the number of times each adjective appears/how many data points are used to compute the mean and sd  
+item_counts <- Adjective_Norming_Data %>% count(item_adj, Word_order)
+```
+
+```{r}
+#Optional: save the item means as a .csv file then copy the counts into that file
+write.csv(item_means,"/desktop/Item Means.csv")
+```
+
+
