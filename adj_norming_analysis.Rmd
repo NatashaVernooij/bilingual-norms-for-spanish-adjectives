@@ -78,12 +78,12 @@ summary(Adjective_Norming_Data)
 ```
 n= 38; 2 did not finish whole survey
 Age: 18-48, mean= 21
-Gender: m=8 f=26, nb=1 prefer not to answer=1 (from Google Sheet, can get this by summarizing by Subj_num and Gender)
+Gender: m=8 f=26, nb=1 prefer not to answer=1
 LexTALE Eng: range= 52.24-96.22, mean= 78.87
 LexTALE Esp: range= 43.74-95.08, mean= 66.33
 % El Paso: range= 40-100, mean = 95.67
 % talk with El Paso: range= 31-100, mean=88.64
-Hispanic (Latinx?): y=33, n=3 (from Google Sheet, can get this by summarizing by Subj_num and Latinx)
+Hispanic (Latinx?): y=33, n=3
 
 ##Item Means and SD
 #calculate mean and sd for each appearance of an adjective in each position, include the type_of_adj column
@@ -102,5 +102,3 @@ item_counts <- Adjective_Norming_Data %>% count(item_adj, Word_order)
 #Optional: save the item means as a .csv file then copy the counts into that file
 write.csv(item_means,"/desktop/Item Means.csv")
 ```
-
-
