@@ -1,4 +1,4 @@
-# Bilingual Norms for Spanish Adjectives
+# Bilingual Norms for Spanish Adjectives (Chapter 2 of dissertation)
 Associatied OSF: https://osf.io/3z4qw/
 
 This repository contains the materials, data, and code used in an experiment that investigated Spanish/English bilingual's position preference (pre- or post-nominal) for different types of Spanish adjectives.
